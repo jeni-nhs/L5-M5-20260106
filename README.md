@@ -2,7 +2,7 @@
 
 ## Project Brief
 
-A library wants to improve their current quality analysis, as manually completing the task takes too much time and is less reliable. They are looking for a more efficient way to filter data using Python and automation. They have heard of a tool called Azure DevOps and want to apply it to their process.
+A library wants to improve their current quality analysis, as manually completing the task takes too much time and is less reliable. They are looking for a more efficient way to filter data using Python and automation. They have heard of a tool called Azure DevOps. and want to apply it to their process.
 
 ## Proposed Architecture
 
@@ -41,4 +41,4 @@ Acceptance Criteria:
 ## Planning
 
 1. Explore data
-2. 
+2. Do more stuff
