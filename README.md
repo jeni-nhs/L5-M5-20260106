@@ -39,3 +39,8 @@ Acceptance Criteria:
 Acceptance Criteria:
 * Dashboard with visualisations for quality metrics and trends
 * Data quality issues highlighted
+
+### Planning
+
+1. Explore data
+2. 
