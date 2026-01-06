@@ -10,7 +10,7 @@ A library wants to improve their current quality analysis, as manually completin
 
 The proposed architecture for this project:
 
-![architecture diagram](/architecture_diagram.drawio.png)
+![architecture diagram](/assests/images/architecture_diagram.drawio.png)
 
 ### User stories
 
