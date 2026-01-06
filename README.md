@@ -12,7 +12,7 @@ The proposed architecture for this project:
 
 ## User stories
 
-**Data Engineer**
+# Data Engineer
 
 **As a** data engineer  
 **I want to** build an automated solution that cleans and validates the library data  
@@ -28,7 +28,7 @@ Acceptance Criteria:
 * Monitoring dashboard for the pipeline
 * Technical documentation
 
-**Library Operations Manager**
+# Library Operations Manager
 
 **As a** library operations manager  
 **I want to** receive automated reports on my stock  
