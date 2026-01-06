@@ -1,18 +1,16 @@
-# Data Engineering Level 5 Module 5
+# Library Data Product Development
 
-## Library Data Product Development
-
-### Project Brief
+## Project Brief
 
 A library wants to improve their current quality analysis, as manually completing the task takes too much time and is less reliable. They are looking for a more efficient way to filter data using Python and automation. They have heard of a tool called Azure DevOps and want to apply it to their process.
 
-### Proposed Architecture
+## Proposed Architecture
 
 The proposed architecture for this project:
 
 ![architecture diagram](/assests/images/architecture_diagram.drawio.png)
 
-### User stories
+## User stories
 
 **Data Engineer**
 
@@ -40,7 +38,7 @@ Acceptance Criteria:
 * Dashboard with visualisations for quality metrics and trends
 * Data quality issues highlighted
 
-### Planning
+## Planning
 
 1. Explore data
 2. 
