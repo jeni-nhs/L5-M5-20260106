@@ -41,4 +41,25 @@ Acceptance Criteria:
 ## Planning
 
 1. Explore data
-2. Do more stuff
+2. Add additional columns:
+   * Days borrowed
+   * Other
+3. Tests
+4. UAT
+5. Dashboarding
+6. Further UAT
+7. Release
+
+## Data processing
+
+The data will be provided in CSV format in <location>.
+
+This will be picked up as part of a pipeline, processed using python, and then output into a csv file or database.
+
+This data will then be used as the source for a Power BI dashboard, where the semantic model will be built, and published into the Power BI service.
+
+## Testing
+
+Unit tests will be implemented on columns to ensure that the data is being correctly calculated, this includes the number of days a book was borrowed for, this will mean that we can then do testing on the data quality to easily find dates that are incorrect (returned before checkout), or identify if they have possibly been input incorrectly (wildly out of range borrowed days).
+
+UAT testing will be required after the cleaned dataset is produced to ensure that no further columns are required. Once the dashboard is built, there will be a need for another round of UAT to ensure it is fit for purpose.
