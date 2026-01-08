@@ -1,0 +1,51 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.9">
+  <diagram name="Page-1" id="1ZNIK7lir2VK2b1kLray">
+    <mxGraphModel dx="2058" dy="1116" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Customer" vertex="1">
+          <mxGeometry height="60" width="30" x="680" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-7" edge="1" parent="1" source="ul8BsMDhIce4PiYhTO1q-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="695" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Browser-based dashboard" vertex="1">
+          <mxGeometry height="60" width="120" x="635" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-8" edge="1" parent="1" source="ul8BsMDhIce4PiYhTO1q-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ul8BsMDhIce4PiYhTO1q-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="row-level security:&lt;div&gt;customer id&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="450" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-20" edge="1" parent="1" source="ul8BsMDhIce4PiYhTO1q-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ul8BsMDhIce4PiYhTO1q-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Frontend portal for login" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-14" edge="1" parent="1" source="ul8BsMDhIce4PiYhTO1q-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ul8BsMDhIce4PiYhTO1q-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Table links login/customer id" vertex="1">
+          <mxGeometry height="60" width="120" x="260" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-16" edge="1" parent="1" source="ul8BsMDhIce4PiYhTO1q-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ul8BsMDhIce4PiYhTO1q-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-15" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Developer" vertex="1">
+          <mxGeometry height="60" width="30" x="115" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-21" edge="1" parent="1" source="ul8BsMDhIce4PiYhTO1q-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ul8BsMDhIce4PiYhTO1q-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ul8BsMDhIce4PiYhTO1q-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Streamlit authenticator:&lt;div&gt;YAML file&lt;/div&gt;&lt;div&gt;Hash passwords&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="260" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
