@@ -1,3 +1,8 @@
+import sys
+
+num1 = int(sys.argv[1])
+num2 = int(sys.argv[2])
+
 class Calculator:
     def __init__(self, num1, num2):
         self.num1 = num1
@@ -16,6 +21,6 @@ class Calculator:
         return self.num1 / self.num2
     
 if __name__ == '__main__':
-    myCalc = Calculator(num1 = 1093450, num2 = 234527)
-    print(myCalc.get_product())
+    myCalc = Calculator(num1 = num1, num2 = num2)
+    print(myCalc.get_quotient())
     
