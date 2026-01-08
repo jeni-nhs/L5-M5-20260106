@@ -10,6 +10,10 @@ The proposed architecture for this project:
 
 ![architecture diagram](/assets/images/architecture_diagram.drawio.png)
 
+The proposed architecture for the customer portal:
+
+![customer portal](/customer_portal.drawio.png)
+
 ## User stories
 
 ### Data Engineer
