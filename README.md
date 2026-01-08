@@ -12,7 +12,7 @@ The proposed architecture for this project:
 
 The proposed architecture for the customer portal:
 
-![customer portal](/customer_portal.drawio.png)
+![customer portal](/assets/images/customer_portal.drawio.png)
 
 ## User stories
 
