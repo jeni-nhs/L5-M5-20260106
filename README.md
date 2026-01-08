@@ -4,17 +4,9 @@
 
 A library wants to improve their current quality analysis, as manually completing the task takes too much time and is less reliable. They are looking for a more efficient way to filter data using Python and automation. They have heard of a tool called Azure DevOps. and want to apply it to their process.
 
-## Proposed Architecture
-
-The proposed architecture for this project:
-
-![architecture diagram](/assets/images/architecture_diagram.drawio.png)
-
-The proposed architecture for the customer portal:
-
-![customer portal](/assets/images/customer_portal.drawio.png)
-
 ## User stories
+
+To make sure the project fulfils the needs of multiple members of staff and our external customers, we have written user stories to briefly describe the requirements of the project.
 
 ### Data Engineer
 
@@ -42,28 +34,70 @@ Acceptance Criteria:
 * Dashboard with visualisations for quality metrics and trends
 * Data quality issues highlighted
 
+### Library Customers
+
+**As a** library user  
+**I want to** see my personal stats for items I have taken out on loan  
+**So that** I can see an overview of my reading habits  
+
+Acceptance Criteria:
+* Dashboard with visualisations for metrics and trends
+
+## Proposed Architecture
+
+The proposed architecture for this project:
+
+![architecture diagram](/assets/images/architecture_diagram.drawio.png)
+
+The proposed architecture for the customer portal:
+
+![customer portal](/assets/images/customer_portal.drawio.png)
+
 ## Planning
 
-1. Explore data
-2. Add additional columns:
+This project will require the following steps, with approximate timeframes:
+
+### Library Metrics Dashboard
+
+1. Explore data (1 to 2 weeks)
+2. Identify and build enrichment columns (2 to 3 weeks)
    * Days borrowed
    * Other
-3. Tests
-4. UAT
-5. Dashboarding
-6. Further UAT
-7. Release
+3. Develop initial solution (12 weeks)
+4. Testing (2 weeks)
+5. User Acceptance Testing (2 weeks)
+6. Develop finished solution (4 weeks)
+7. Dashboarding (4 weeks)
+8. Further UAT/development of dashboard (4 weeks)
+9. Release
+
+#### Security requirements
+
+Staff users will need to log in using their Power BI login details.
+
+### Customer portal
+
+1. Requirements gathering (1 to 2 weeks)
+2. Development of backend solution (12 weeks)
+3. Development of frontend solution (12 weeks)
+4. Dashboard development (4 weeks)
+
+Metrics can be visualised using an open-source python solution called Streamlit, this will reduce the cost of the project.
+
+#### Security requirements
+
+Customers will need login details, which should be obsfucated in the backend. We will need to bring in cybersecurity consultants to ensure that this data is held securely.
 
 ## Data processing
 
-The data will be provided in CSV format in <location>.
+The data will be provided in CSV format in "location".
 
-This will be picked up as part of a pipeline, processed using python, and then output into a csv file or database.
+This will be picked up as part of an automated pipeline (driven by YAML files), processed using python scripts ([python scripts](../main/clean_books/)), and then output into a csv file.
 
 This data will then be used as the source for a Power BI dashboard, where the semantic model will be built, and published into the Power BI service.
 
 ## Testing
 
-Unit tests will be implemented on columns to ensure that the data is being correctly calculated, this includes the number of days a book was borrowed for, this will mean that we can then do testing on the data quality to easily find dates that are incorrect (returned before checkout), or identify if they have possibly been input incorrectly (wildly out of range borrowed days).
+Unit tests will be implemented on columns to ensure that the data is being correctly calculated. Any incorrect data will not be amended, but will be identified to allow the data to be corrected at source.
 
 UAT testing will be required after the cleaned dataset is produced to ensure that no further columns are required. Once the dashboard is built, there will be a need for another round of UAT to ensure it is fit for purpose.
