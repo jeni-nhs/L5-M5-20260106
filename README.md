@@ -109,3 +109,20 @@ UAT testing will be required after the cleaned dataset is produced to ensure tha
 ## Data Archiving
 
 The data CSV files as provided, once processed, will be datetimestamped and archived for a set period of time. After the retention policy has expired, they will be periodically deleted.
+
+## Dashboard
+
+The data engineering team will need a dashboard to track the metrics of how the data processing is performing.
+
+Key metrics that will need to be tracked include:
+* Process duration
+* Counts of rows that have errored (date issues, blank data, etc.)
+* Count of rows of the final processed data
+
+A mock-up of how this will look:
+
+![dhashboard example](/assets/images/dashboard.png)
+
+Customer facing information will include the row-level details of the errors so that they can be fixed in the source system:
+
+![dhashboard rows_example](/assets/images/dashboard2.png)
