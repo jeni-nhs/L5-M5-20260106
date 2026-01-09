@@ -146,7 +146,7 @@ if __name__ == '__main__':
     # Enriching the dataset
     data = enrich_dateDuration(df=data, colA='Book Returned', colB='Book checkout')
 
-    data.to_csv('cleaned_books_file.csv')
+    data.to_csv(f'cleaned_books_file_{datetime.now().strftime('%Y%m%d%H%M%S')}.csv')
 
     #print(data)
 
@@ -186,7 +186,7 @@ if __name__ == '__main__':
     else:
         print("No errors found")
 
-    data2.to_csv('cleaned_customers_file.csv')
+    data2.to_csv(f'cleaned_customers_file_{datetime.now().strftime('%Y%m%d%H%M%S')}.csv')
 
     ## Add processing information
 
