@@ -4,6 +4,10 @@
 
 The Data Engineering Library wants to improve their current quality analysis, as manually completing the task takes too much time and is less reliable. They are looking for a more efficient way to filter data using Python and automation. Management are aware of a tool called Azure DevOps and want to apply it to this process.
 
+The main app code and processed output files are here: [python scripts](../main/python_app/)
+
+Original sample data can be found: [sample data](../main/sample_data/)
+
 ## User stories
 
 To make sure the project fulfils the needs of multiple members of staff and our external customers, we have written user stories to briefly describe the requirements of the project.
@@ -92,7 +96,7 @@ Customers will need login details, which should be obsfucated in the backend. We
 
 The data will be provided in CSV format in "location".
 
-This will be picked up as part of an automated pipeline (driven by YAML files), processed using python scripts ([python scripts](../main/clean_books/)), and then output into a csv file.
+This will be picked up as part of an automated pipeline (driven by YAML files), processed using [python scripts](../main/python_app/), and then output into a csv file.
 
 This data will then be used as the source for a Power BI dashboard, where the semantic model will be built, and published into the Power BI service.
 
@@ -101,3 +105,7 @@ This data will then be used as the source for a Power BI dashboard, where the se
 Unit tests will be implemented on columns to ensure that the data is being correctly calculated. Any incorrect data will not be amended, but will be identified to allow the data to be corrected at source.
 
 UAT testing will be required after the cleaned dataset is produced to ensure that no further columns are required. Once the dashboard is built, there will be a need for another round of UAT to ensure it is fit for purpose.
+
+## Data Archiving
+
+The data CSV files as provided, once processed, will be datetimestamped and archived for a set period of time. After the retention policy has expired, they will be periodically deleted.
