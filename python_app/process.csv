@@ -1,0 +1,22 @@
+process_type,row_count,file_name,run_dttm
+processed,19,books,2026-01-09 12:06:26
+date_errors,1,books,2026-01-09 12:06:26
+duplicate_errors,0,books,2026-01-09 12:06:26
+na_errors,94,books,2026-01-09 12:06:26
+processed,8,customers,2026-01-09 12:06:26
+duplicate_errors,0,customers,2026-01-09 12:06:26
+na_errors,1,customers,2026-01-09 12:06:26
+processed,19,books,2026-01-09 14:08:41
+date_errors,1,books,2026-01-09 14:08:41
+duplicate_errors,0,books,2026-01-09 14:08:41
+na_errors,94,books,2026-01-09 14:08:41
+processed,8,customers,2026-01-09 14:08:41
+duplicate_errors,0,customers,2026-01-09 14:08:41
+na_errors,1,customers,2026-01-09 14:08:41
+processed,19,books,2026-01-09 14:08:57
+date_errors,1,books,2026-01-09 14:08:57
+duplicate_errors,0,books,2026-01-09 14:08:57
+na_errors,94,books,2026-01-09 14:08:57
+processed,8,customers,2026-01-09 14:08:57
+duplicate_errors,0,customers,2026-01-09 14:08:57
+na_errors,1,customers,2026-01-09 14:08:57
